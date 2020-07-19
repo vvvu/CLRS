@@ -1,22 +1,26 @@
 #### 13. 1-1
 
-> In the style of Figure 13.1(a), draw the complete binary search tree of height 3 on the keys {1,2,...,15}. Add the NIL leaves and color the nodes in three different ways such that the black-heights of the resulting red-black trees are 2, 3, and 4.
+------
+
+>In the style of Figure 13.1(a), draw the complete binary search tree of height 3 on the keys {1,2,...,15}. Add the NIL leaves and color the nodes in three different ways such that the black-heights of the resulting red-black trees are 2, 3, and 4.
 
 ##### Answer
 
 Black Height = 2
 
-![13.1-1-a](/Users/bartender/Library/Mobile Documents/com~apple~CloudDocs/Repo/CLRS/CLRS/Chapter 13. Red-Black Trees/src/13.1-1-a.png)
+![13.1-1-a](./src/13.1-1-a.png)
 
 Black Height = 3
 
-![13.1-1-b](/Users/bartender/Library/Mobile Documents/com~apple~CloudDocs/Repo/CLRS/CLRS/Chapter 13. Red-Black Trees/src/13.1-1-b.png)
+![13.1-1-b](./src/13.1-1-b.png)
 
 Black Height = 4
 
-![13.1-1-c](/Users/bartender/Library/Mobile Documents/com~apple~CloudDocs/Repo/CLRS/CLRS/Chapter 13. Red-Black Trees/src/13.1-1-c.png)
+![13.1-1-c](./src/13.1-1-c.png)
 
 #### 13. 1-2
+
+------
 
 > Draw the red-black tree that results after TREE-INSERT is called on the tree in Figure 13.1 with key 36. If the inserted node is colored red, is the resulting tree a red-black tree? What if it is colored black?
 
@@ -27,6 +31,8 @@ Black Height = 4
 
 #### 13. 1-3
 
+------
+
 > Let us define a **relaxed red-black tree** as a binary search tree that satisfies red-black properties 1, 3, 4, and 5. In other words, the root may be either red or black. Consider a relaxed red-black tree T whose root is red. If we color the root of T black but make no other changes to T , is the resulting tree a red-black tree?
 
 ##### Answer
@@ -34,6 +40,8 @@ Black Height = 4
 - 是，黑高并没有发生变化，同时也满足红黑树的所有规则
 
 #### 13. 1-4
+
+------
 
 > Suppose that we “absorb” every red node in a red-black tree into its black parent, so that the children of the red node become children of the black parent. (Ignore what happens to the keys.) What are the possible degrees of a black node after all its red children are absorbed? What can you say about the depths of the leaves of the resulting tree?
 
@@ -49,6 +57,8 @@ Black Height = 4
 
 #### 13. 1-5
 
+------
+
 > Show that the longest simple path from a node x in a red-black tree to a descendant leaf has length at most twice that of the shortest simple path from node x to a descendant leaf.
 
 ##### Answer
@@ -59,6 +69,8 @@ Black Height = 4
 
 #### 13. 1-6
 
+------
+
 > What is the largest possible number of internal nodes in a red-black tree with black height k? What is the smallest possible number?
 
 ##### Answer
@@ -67,6 +79,8 @@ Black Height = 4
 2. 内部结点最少：红黑树最低的情况下，结点全黑，树的高度即黑高为k，则结点数量为$2^k-1$
 
 #### 13. 1-7
+
+------
 
 > Describe a red-black tree on n keys that realizes the largest possible ratio of red internal nodes to black internal nodes. What is this ratio? What tree has the smallest possible ratio, and what is the ratio?
 
