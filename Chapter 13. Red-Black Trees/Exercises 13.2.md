@@ -7,19 +7,19 @@
 ##### Answer
 
 ```pseudocode
-RIGHT-ROTATE(T,y)
-1		x = y.left
-2   x.right = y.left
-3		if x.right ≠ T.nil
-4				x.right.p = y
-5		x.p = y.p
-6		if y.p == T.nil
-7				T.root = x
-8		elseif y = y.p.left
-9				y.p.left = x
-10	else y.p.right = x
-11	x.right = y
-12	y.p = x
+RIGHT-ROTATE(T, y)
+    x = y.left
+    y.left = x.right
+    if x.right != T.nil
+        x.right.p = y
+    x.p = y.p
+    if y.p == T.nil
+        T.root = x
+    elseif y == y.p.right
+        y.p.right = x
+    else y.p.left = x
+    x.right = y
+    y.p = x
 ```
 
 #### 13. 2-2
@@ -40,7 +40,7 @@ RIGHT-ROTATE(T,y)
 
 ##### Answer
 
-- α,β,􏰈γ的变化和a,b,c的变化是一致的。
+- α,β,γ的变化和a,b,c的变化是一致的。
   1. a.depth + 1
   2. b.depth 不变
   3. c.depth - 1
